@@ -24,23 +24,23 @@ class Barang<Kalimat, Angka, Pilihan> {
         return uang;
     }
 
-   public void Jenis() {
-    tipe item;
-    switch ((int)pilih) {
-        case 1:
-            item = tipe.Sandang;
-            break;
-        case 2:
-            item = tipe.Pangan;
-            break;
-        case 3:
-            item = tipe.Papan;
-            break;
-        default:
-            item = tipe.nothing;
+    public void Jenis() {
+        tipe item;
+        switch ((int) pilih) {
+            case 1:
+                item = tipe.Sandang;
+                break;
+            case 2:
+                item = tipe.Pangan;
+                break;
+            case 3:
+                item = tipe.Papan;
+                break;
+            default:
+                item = tipe.nothing;
+        }
+        System.out.println("Jenis : " + item);
     }
-    System.out.println("Jenis : " + item);
-}
 
 }
 

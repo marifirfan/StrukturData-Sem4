@@ -1,3 +1,5 @@
+package TugasModul1;
+
 import java.util.Scanner;
 
 class Barang<Kalimat, Angka, Pilihan> {
@@ -26,6 +28,7 @@ class Barang<Kalimat, Angka, Pilihan> {
 
     public void Jenis() {
         tipe item;
+
         switch ((int) pilih) {
             case 1:
                 item = tipe.Sandang;

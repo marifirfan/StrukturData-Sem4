@@ -1,4 +1,4 @@
-package Modul2.Codelab;
+package Codelab;
 //Muhammad Arif Irfan - 202210370311030 - Strukdat - J
 
 import java.util.ArrayList;

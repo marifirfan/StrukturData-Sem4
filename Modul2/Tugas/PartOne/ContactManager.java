@@ -3,26 +3,6 @@ package Tugas.PartOne;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Contact<Nama, Kontak> {
-
-    private Nama Nama;
-    private Kontak Nomor;
-
-    public Contact(Nama Nama, Kontak Nomor) {
-        this.Nama = Nama;
-        this.Nomor = Nomor;
-    }
-
-    public Nama getNama() {
-        return Nama;
-    }
-
-    public Kontak getKontak() {
-        return Nomor;
-    }
-
-}
-
 public class ContactManager {
     public static void main(String[] args) {
 
@@ -48,7 +28,7 @@ public class ContactManager {
             if (Pilihan == 1) {
                 input.nextLine();
 
-                // add a f contact
+                // tambah
                 String UserName;
                 String UserNumber;
                 boolean ulang = true;
@@ -73,7 +53,7 @@ public class ContactManager {
                 System.out.println("Kontak Berhasil di tambahkan\n");
 
             } else if (Pilihan == 2) {
-                // list a f contact
+                // display
                 System.out.println("daftar Kontak : ");
                 for (int i = 0; i < Nama.size(); i++) {
                     System.out.println(i + 1 + ". " + Nama.get(i) + " - " + Nomor.get(i));
@@ -84,7 +64,7 @@ public class ContactManager {
             } else if (Pilihan == 3) {
                 input.nextLine();
 
-                // search a f contact
+                // cari
                 System.out.print("Masukan Nama Kontak yang ingin di cari : ");
                 String SeacrhNama = input.nextLine();
                 boolean NotFound = true;
@@ -111,8 +91,6 @@ public class ContactManager {
             }
 
         } while (Pilihan != 4);
-
-        System.out.println("POWER!!!, MORE POWER!!!!!!!!!!");
 
         input.close();
     }

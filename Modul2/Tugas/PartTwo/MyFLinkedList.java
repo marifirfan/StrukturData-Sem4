@@ -32,7 +32,7 @@ public class MyFLinkedList {
         Node<String> current = Head;
 
         if (current == null) {
-            System.out.println("Your f data is empty\n");
+            System.out.println("tidak ada data ! \n");
             return;
         }
 
@@ -47,22 +47,23 @@ public class MyFLinkedList {
 
     public void searchContact(String nama) {
         Node<String> current = Head;
-        boolean NotFound = true;
+        boolean tidakketemu = true;
         if (current == null) {
             System.out.println("Your f data is empty\n");
         } else {
             while (current != null) {
                 if (current.nama.toLowerCase().equals(nama.toLowerCase())) {
+                    tidakketemu = false;
                     System.out.println("Kontak di temukan");
                     System.out.println("Nama  : " + current.nama);
                     System.out.println("Nomor : " + current.nomor);
                     System.out.println();
-                    NotFound = false;
                 }
                 current = current.next;
             }
 
-            if (NotFound) {
+            [node]-><-{]}
+            if (tidakketemu) {
                 System.out.println("Kontak yang anda cari tidak di temukan\n");
             }
         }

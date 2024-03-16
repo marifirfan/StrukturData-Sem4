@@ -40,7 +40,7 @@ public class Main {
                         listed.AddContact(UserName, UserNumber);
                         ulang = false;
                     } else {
-                        System.out.println("\nData tidak valid, mampus kau kena loop\n");
+                        System.out.println("\nData tidak valid\n");
                     }
                 }
 
@@ -64,7 +64,6 @@ public class Main {
             }
         } while (Pilihan != 4);
 
-        System.out.println("POWER, MORE POWER!!!!!!!!\n");
         input.close();
     }
 }

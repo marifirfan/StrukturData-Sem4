@@ -1,4 +1,4 @@
-package Tugas.stack;
+package stack;
 
 public class MyDamnStack {
 
@@ -15,14 +15,14 @@ public class MyDamnStack {
 
     public void visitURL(String URL) {
         // if (top < Size-1 && top != Size-1) {
-        //     MyURL[++top] = URL;
-        // } 
-        
-        if (top == Size-1) {
+        // MyURL[++top] = URL;
+        // }
+
+        if (top == Size - 1) {
 
             String newArr[] = new String[2 * Size];
 
-            for (int i = 0; i < top+1; i++) {
+            for (int i = 0; i < top + 1; i++) {
                 newArr[i] = MyURL[i];
             }
             MyURL = newArr;
@@ -58,7 +58,7 @@ public class MyDamnStack {
         return top;
     }
 
-    public int MyURL(){
+    public int MyURL() {
         return MyURL.length;
     }
 }

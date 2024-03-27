@@ -1,9 +1,5 @@
-package Tugas.stack;
+package stack;
 
-
-/**
- * @author wacky woohoo pizza man
- */
 public class Main {
     public static void main(String[] args) {
 
@@ -22,14 +18,12 @@ public class Main {
 
         stacky.visitURL("https://Yahoo.com");
 
-        stacky.visitURL("https://instagram.com"); 
+        stacky.visitURL("https://instagram.com");
 
         stacky.visitURL("https://devilmaycry.com");
         // -> last in
 
         System.out.println("\n====================\n");
-
-        
 
         stacky.getCurrentURL();
         stacky.forward();
@@ -38,5 +32,5 @@ public class Main {
         System.out.println("\n====================\n");
 
     }
-    
+
 }

@@ -1,18 +1,12 @@
-package Tugas.queue;
+package queue;
 
 import java.util.Scanner;
-
-/**
- * @author wacky woohoo pizza man
- */
 
 public class Main {
     public static void main(String[] args) {
         boolean repeat = true;
 
         MyDamnQueue Queky = new MyDamnQueue();
-
-        
 
         Scanner input = new Scanner(System.in);
 

@@ -1,4 +1,4 @@
-package Tugas.queue;
+package queue;
 
 class Node {
 
@@ -48,7 +48,8 @@ public class MyDamnQueue {
         }
 
         while (current != null) {
-            System.out.print("\nNomor Ticket : " + current.Nomor + " | Nama : " + current.Nama + " | Jumlah : " + current.Jumlah);
+            System.out.print("\nNomor Ticket : " + current.Nomor + " | Nama : " + current.Nama + " | Jumlah : "
+                    + current.Jumlah);
             current = current.next;
             if (current == null) {
                 System.out.println("\n");

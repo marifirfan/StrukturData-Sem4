@@ -44,7 +44,7 @@ public class MyDamnQueue {
     public void DisplayTicket() {
         Node current = first;
         if (current == null) {
-            System.out.println("aight bet, no data to Display\n");
+            System.out.println("Tidak Ada Data !\n");
         }
 
         while (current != null) {
@@ -60,7 +60,7 @@ public class MyDamnQueue {
     public void RemoveTicket() {
 
         if (first == null) {
-            System.out.println("aight bet, no data to Display\n");
+            System.out.println("Tidak Ada Data !\n");
         } else {
             System.out.println("hapus ticket dengan nomor " + first.Nomor + "\n");
             first = first.next;

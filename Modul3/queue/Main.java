@@ -11,7 +11,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         while (repeat) {
-            System.out.println("Welcome to wacky woohoo pizza man cinema");
+            System.out.println("Welcome to wumbo jumbo movie");
             System.out.println("1. Pesan tiket");
             System.out.println("2. Tampilkan tiket");
             System.out.println("3. Hapus Daftar tiket");
@@ -39,7 +39,7 @@ public class Main {
             } else if (pilih == 4) {
                 repeat = false;
                 System.out.println("\nThanks\n");
-                System.out.println("also check this motivation song");
+                System.out.println("raaawr :");
                 System.out.println("1. https://youtu.be/Jrg9KxGNeJY?si=ssmOIYMf5GrVqVwu");
                 System.out.println("2. https://youtu.be/-CTqKDgtbbg?si=5NProSLAaEe9lbDN\n");
             } else {

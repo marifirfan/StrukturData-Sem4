@@ -14,25 +14,28 @@ public class MyDamnStack {
     }
 
     public void visitURL(String URL) {
-        // if (top < Size-1 && top != Size-1) {
-        // MyURL[++top] = URL;
+
+        // ini untuk tidak dinamic
+        // if (top < Size - 1 && top != Size - 1) {
+        //     MyURL[++top] = URL;
         // }
 
+        // ini untuk dinamic
         if (top == Size - 1) {
 
-            String newArr[] = new String[2 * Size];
+        String newArr[] = new String[2 * Size];
 
-            for (int i = 0; i < top + 1; i++) {
-                newArr[i] = MyURL[i];
-            }
-            MyURL = newArr;
-            Size *= 2;
+        for (int i = 0; i < top + 1; i++) {
+        newArr[i] = MyURL[i];
+        }
+        MyURL = newArr;
+        Size *= 2;
         }
 
         MyURL[++top] = URL;
     }
 
-    public void back() {
+    public void backward() {
         if (top > 0) {
             --top;
         }

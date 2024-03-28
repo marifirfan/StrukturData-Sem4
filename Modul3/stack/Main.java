@@ -7,9 +7,6 @@ public class Main {
 
         // stack logic = last in first out
 
-        // todo : add your stupid url by use visitURL("NameOfURL")
-
-        // -> first in
         stacky.visitURL("https://google.com");
 
         stacky.visitURL("https://youtube.com");
@@ -20,13 +17,13 @@ public class Main {
 
         stacky.visitURL("https://instagram.com");
 
-        stacky.visitURL("https://devilmaycry.com");
+        stacky.visitURL("https://amazon.com");
         // -> last in
 
         System.out.println("\n====================\n");
 
         stacky.getCurrentURL();
-        stacky.forward();
+        stacky.backward();
         stacky.getCurrentURL();
 
         System.out.println("\n====================\n");
